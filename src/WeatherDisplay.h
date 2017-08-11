@@ -74,5 +74,5 @@ void loadData(), loadCurrent(), loadToday(), loadTomorrow();
 void displayCurrent(), displayClothes(), displayHeader(String s), displayTodaysForecast(), displayTodaysExtras();
 void displayTomorrowsForecast(), displayHumidity(int, int), displayConditions(int, String), getDate();
 void eraseBottom(), printIntTemperature(int, int, int);
-int pickColor(int), pickPopColor(String);
+long pickColor(int), pickPopColor(String);
 boolean readFile(File f, String& s);

@@ -382,7 +382,7 @@ void drawSeparator() {
   }
 }*/
 
-int pickColor(int number) {
+long pickColor(int number) {
   // Take a value (temperature) and returns the corresponding color for the text display
   if (number > 100) {
     return ILI9341_RED;
@@ -458,7 +458,7 @@ boolean readFile(File dataFile, String& value) {
 }
 
 // Pick the text color for the probability of precipitation
-int pickPopColor(String pop) {
+long pickPopColor(String pop) {
   int number;
 
   number = pop.toInt();        // Get the int value from the String
