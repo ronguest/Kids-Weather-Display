@@ -1,3 +1,6 @@
+//
+//  Copyright (C) 2017 Ronald Guest <http://about.me/ronguest>
+
 #include "Conditions.h"
 
 //Conditions::Conditions() {
@@ -42,4 +45,3 @@ int Conditions::getTemperature() {
 char* Conditions::getPop() {
   return pop;
 }
-

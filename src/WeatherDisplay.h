@@ -1,3 +1,6 @@
+//
+//  Copyright (C) 2017 Ronald Guest <http://about.me/ronguest>
+
 /*
  *  Defines key constants for the Weahter Display app
  */

@@ -1,4 +1,5 @@
-#include <Arduino.h>
+//
+//  Copyright (C) 2017 Ronald Guest <http://about.me/ronguest>
 
 /***************************************************
 
@@ -15,6 +16,7 @@ Linux side is using JSON from weatherunderground to fetch conditions and forecas
 http://www.wunderground.com/weather/api/d/436da0958aa624c8/edit.html
  ****************************************************/
 
+#include <Arduino.h>
 #include <Bridge.h>
 #include <Process.h>
 #include <FileIO.h>

@@ -1,6 +1,8 @@
+//
+//  Copyright (C) 2017 Ronald Guest <http://about.me/ronguest>
 
 class Conditions {
-  public: 
+  public:
     void setLow(int temperature);
     int getLow();
     void setHigh(int temperature);
