@@ -144,8 +144,14 @@ void loadToday() {
   if (readFile(highFile, value)) {
     highFile.close();
   }
-  todayConditions.setHigh(value.toInt());
-  //value="";
+  // Sometimes WU reports "None" instead of a value. Most noticeably the day's forecast high starting in the evening
+  // So as a special case if the value is None then just do nothing and stick with the previous value.
+  // Unfortunately toInt() returns zero if the string isn't a valid number.
+  if (value.equalsIgnoreCase("None")) {
+    // Just leave the High as is
+  } else {
+    todayConditions.setHigh(value.toInt());
+  }
 
   todayPop = "";    // Need to null it out before reading new value
   File todPopFile = FileSystem.open(TodaysForecastPopFileName, FILE_READ);
